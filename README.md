@@ -1,2 +1,2 @@
 # mastercxrd
-check info page or readme file
+check info page or readme.txt file
