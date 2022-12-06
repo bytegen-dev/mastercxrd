@@ -198,6 +198,7 @@ body{
     overflow: hidden;
     width: 100vw;
     display: flex;
+    overflow: hidden;
     /* background: #444; */
     /* background: black; */
     background-size: cover;
@@ -301,6 +302,7 @@ body{
     background-image: linear-gradient(transparent, black);
     color: #fff;
     width: 100vw;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -424,6 +426,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     /* padding: 50vh 0; */
 }
 
