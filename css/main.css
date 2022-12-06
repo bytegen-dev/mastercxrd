@@ -1136,6 +1136,17 @@ body{
     .social a{
         color: tomato;
     }
+
+    .social .hidden{
+        opacity: 0.5;
+        filter: blur(5px);
+        transition: all 1s ease;
+    }
+
+    .social .show{
+        filter: blur(0);
+        opacity: 1;
+    }
     
     .cccc{
         opacity: 0.3;
