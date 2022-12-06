@@ -900,8 +900,13 @@ body{
         right: 20px;
         bottom: 10px;
         z-index: 3;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
         border: 2px solid tomato;
+    }
+    
+    .mobile-links .info:hover{
+        color: purple;
+        border: 2px solid purple;
     }
 
     .mastercxrd{

@@ -1,3 +1,11 @@
-I started this website on 12/05/2022
+SITE INFO
+date of last update - today
+date of initial commit - 5 Dec 2022
+site coder: Isaac Adebayo
+original figma designer: Isaac Adebayo
 
-I intend to finish it on or before 12/24/2022
+
+
+CREDITS
+mastercard icon: mastercard website; used legally
+sponsors icons: fontawesome
