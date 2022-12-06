@@ -952,10 +952,78 @@ body{
     
     .features-and-services{
         border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .features-and-services div span{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    
+    .features-and-services .spread{
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        transition: all 1s ease;
+    }
+
+    .features, .services{
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .features{
+        border-bottom: 2px solid transparent;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        transition: all 1s ease;
+        height: 60px;
+        align-items: baseline;
+    }
+
+    .features::after{
+        font-size: 20px;
+        position: absolute;
+        bottom: 30px;
+        color: #fff;
+        content: 'will be updated soon ✅';
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    .services::after{
+        font-size: 20px;
+        position: absolute;
+        color: #fff;
+        bottom: 30px;
+        opacity: 0;
+        content: 'will be updated soon ✅';
+        transition: all 1s ease;
+    }
+
+    .features.slash::after, .services.slash::after{
+        opacity: 0.36;
+    }
+    
+    .services{
+        padding-top: 10px;
+        height: 60px;
+        transition: all 1s ease;
+        align-items: baseline;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .features.slash .spread, .services.slash .spread{
+        transform: rotate(180deg);
+    }
+
+    .features.slash, .services.slash{
+        height: 200px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.156);
     }
     
     .sponsors{
