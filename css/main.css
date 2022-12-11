@@ -47,7 +47,7 @@ body{
     text-decoration: none;
 }
 
-.chat:hover{
+.chat.whitechat{
     background: rgba(255, 255, 255, 1);
     border: 2px solid #fff;
     color: #000;
