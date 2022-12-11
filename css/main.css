@@ -47,7 +47,7 @@ body{
     text-decoration: none;
 }
 
-.chat.whitechat{
+.chat:hover{
     background: rgba(255, 255, 255, 1);
     border: 2px solid #fff;
     color: #000;
@@ -735,6 +735,18 @@ body{
     .chat{
         bottom: 20px;
         right: 20px;
+    }
+
+    .chat.whitechat{
+        background: rgba(255, 255, 255, 1) !important;
+        border: 2px solid #fff !important;
+        color: #000 !important;
+    }
+
+    .chat:hover{
+        background: rgba(0, 0, 0, 0.5);
+        border: 2px solid #fff;
+        color: #fff;
     }
 
     .nav-desktop{
