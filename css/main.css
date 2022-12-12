@@ -238,7 +238,10 @@ body{
     font-size: 150px;
     font-weight: bolder;
     -webkit-background-clip: text;
-    -webkit-text-stroke: 3px #fff;
+    background-image: linear-gradient(rgb(255, 106, 0),rgb(246, 99, 51), tomato);
+
+    /* background-image: linear-gradient(red, tomato, red); */
+    /* -webkit-text-stroke: 3px #fff; */
 }
 
 .head .hidden{
@@ -421,6 +424,94 @@ body{
 .features{
     margin-bottom: 100px;
 }
+
+.features-and-services div span{
+    font-size: 30px;
+}
+
+.features-and-services .spread{
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+
+.features, .services{
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.features{
+    border-bottom: 2px solid transparent;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    transition: all 1s ease;
+    height: 60px;
+    align-items: baseline;
+}
+
+.features::after{
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    content: 'will be updated soon ✅';
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.services::after{
+    font-size: 20px;
+    position: absolute;
+    color: #fff;
+    bottom: 30px;
+    opacity: 0;
+    content: 'will be updated soon ✅';
+    transition: all 1s ease;
+}
+
+.features.slash::after, .services.slash::after{
+    opacity: 0.36;
+}
+
+.services{
+    padding-top: 10px;
+    height: 60px;
+    transition: all 1s ease;
+    align-items: baseline;
+    border-bottom: 2px solid transparent;
+}
+
+.features.slash .spread, .services.slash .spread{
+    transform: rotate(180deg);
+}
+
+.features.slash, .services.slash{
+    height: 200px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.156);
+}
+
+.features.hidden, .services.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s ease;
+}
+
+.features.show, .services.show{
+    filter: blur(0);
+    opacity: 1;
+}
+
+
+
+
+
+
+
 
 .mastercxrd-animation{
     height: 100vh;
@@ -736,11 +827,12 @@ body{
         bottom: 20px;
         right: 20px;
     }
-
+    
     .chat.whitechat{
         background: rgba(255, 255, 255, 1) !important;
         border: 2px solid #fff !important;
         color: #000 !important;
+        transition: all 1s ease;
     }
 
     .chat:hover{
