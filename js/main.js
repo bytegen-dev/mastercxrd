@@ -17,11 +17,9 @@ function slashh(){
 // document.querySelector('.chat')
 
 document.getElementById('chat').addEventListener('touchstart', ()=>{
-    // alert('hey')
     document.querySelector('.chat').classList.add('whitechat')
 })
 
 document.getElementById('chat').addEventListener('touchend', ()=>{
-    // alert('hey')
     document.querySelector('.chat').classList.remove('whitechat')
 })
