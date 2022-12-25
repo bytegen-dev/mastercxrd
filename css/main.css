@@ -1246,6 +1246,20 @@ body{
         font-size: 45px;
     }
 
+    .sponsors h1{
+        position: relative;
+        color: #fff;
+        transform: translateY(0px);
+        font-size: 25px;
+        transition: all 0s linear !important;
+        /* margin-bottom: 40px; */
+    }
+    
+    .sponsors h1.show{
+        transform: translateY(-70px);
+        transition: all 1s ease !important;
+    }
+
     .footer{
         background: #000;
         display: flex;
