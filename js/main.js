@@ -3,6 +3,8 @@ var feat = document.querySelector('.features')
 var serv = document.querySelector('.services')
 var window = document.documentElement
 var preloader = document.getElementById("preloader")
+var hidepre = 'preloader.style.display = "none", 3000'
+
 
 function kaisen(){
     navm.classList.toggle('menu-drop')
@@ -27,7 +29,9 @@ document.getElementById('chat').addEventListener('touchend', ()=>{
 })
 
 function loaded() {
-    preloader.style.display = "none"
+    setTimeout(
+        hidepre, 1500
+    )
 }
 
 window.addEventListener("load", loaded)
