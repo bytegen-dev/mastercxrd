@@ -1385,7 +1385,7 @@ body{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
     z-index: 100;
     display: flex;
     justify-content: center;
