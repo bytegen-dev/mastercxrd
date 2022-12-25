@@ -1,7 +1,7 @@
 var navm = document.querySelector('.nav-mobile')
 var feat = document.querySelector('.features')
 var serv = document.querySelector('.services')
-var left = document.querySelector('.left')
+var left = document.getElementById('left')
 var window = document.documentElement
 var preloader = document.getElementById("preloader")
 var hidepre = 'preloader.style.display = "none"'
@@ -32,8 +32,13 @@ document.getElementById('chat').addEventListener('touchend', ()=>{
 
 function loaded() {
     setTimeout(
-        hidepre, showlft, 1500
+        hidepre, 1500
     )
 }
 
+function showleft(){
+    left.style.display = "flex"
+}
+
 window.addEventListener("load", loaded)
+window.addEventListener("load", setTimeout(showleft, 1500))
