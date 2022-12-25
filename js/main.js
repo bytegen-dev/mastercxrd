@@ -1,6 +1,8 @@
 var navm = document.querySelector('.nav-mobile')
 var feat = document.querySelector('.features')
 var serv = document.querySelector('.services')
+var window = document.documentElement
+var preloader = document.getElementById("preloader")
 
 function kaisen(){
     navm.classList.toggle('menu-drop')
@@ -23,3 +25,9 @@ document.getElementById('chat').addEventListener('touchstart', ()=>{
 document.getElementById('chat').addEventListener('touchend', ()=>{
     document.querySelector('.chat').classList.remove('whitechat')
 })
+
+function loaded() {
+    preloader.style.display = "none"
+}
+
+window.addEventListener("load", loaded)
