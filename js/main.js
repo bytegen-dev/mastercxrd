@@ -1,9 +1,11 @@
 var navm = document.querySelector('.nav-mobile')
 var feat = document.querySelector('.features')
 var serv = document.querySelector('.services')
+var left = document.querySelector('.left')
 var window = document.documentElement
 var preloader = document.getElementById("preloader")
-var hidepre = 'preloader.style.display = "none", 3000'
+var hidepre = 'preloader.style.display = "none"'
+var showlft = 'left.style.display = "flex"'
 
 
 function kaisen(){
@@ -30,7 +32,7 @@ document.getElementById('chat').addEventListener('touchend', ()=>{
 
 function loaded() {
     setTimeout(
-        hidepre, 1500
+        hidepre, showlft, 1500
     )
 }
 
