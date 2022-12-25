@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add('show')
             // entry.target.unobserve
         } else {
-            entry.target.classList.remove("show")
+            // entry.target.classList.remove("show")
         }
     });
 },
