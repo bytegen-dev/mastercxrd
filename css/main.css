@@ -1452,17 +1452,17 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: rgba(231, 205, 203, 0.862);
+    background: rgba(233, 222, 221, 0.6);
     border-radius: 30px;
 }
 
 ::-webkit-scrollbar-button{
-    height: 150px;
-    background-color: rgba(255, 0, 0, 0.05);
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: rgba(231, 205, 203, 1);
+    background: rgb(239, 230, 230);
     border-radius: 30px;
 }
 
