@@ -1446,7 +1446,7 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 10px;
     /* height: 100vh; */
     background: transparent;
 }
@@ -1457,10 +1457,8 @@ body{
 }
 
 ::-webkit-scrollbar-button{
-    width: 20px;
-    height: 10px;
-    color: #fff;
-    background-color: rgba(255, 0, 0, 0.235);
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.05);
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -1469,7 +1467,6 @@ body{
 }
 
 ::-webkit-scrollbar-track{
-    width: 20px;
     background: transparent;
 }
 
