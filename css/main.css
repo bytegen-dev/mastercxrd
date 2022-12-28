@@ -6,10 +6,6 @@
 }
 
 
-::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
-}
 
 
 body{
@@ -1447,6 +1443,27 @@ body{
 @keyframes jumpii {
     0%{scale: 0.8; opacity: 0.6;}
     100%{scale: 3; opacity: 0;}
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    /* height: 100vh; */
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(231, 205, 203, 0.862);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(231, 205, 203, 1);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track{
+    width: 20px;
+    background: transparent;
 }
 
 
