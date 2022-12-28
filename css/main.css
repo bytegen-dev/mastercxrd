@@ -13,7 +13,7 @@ body{
     width: 100vw;
     background-color: #444;
     overflow: hidden;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .chat{
@@ -91,7 +91,7 @@ body{
 .nav-desktop .logo h1{
     /* margin-left: 40px; */
     font-size: 50px !important;
-    color: rgb(254, 43, 43);
+    color: rgb(255, 40, 2);
 }
 
 .nav-desktop .logo h1 span{
@@ -120,12 +120,20 @@ body{
 }
 
 .nav-desktop .desktop-links a{
-    color: #fff;
+    color: rgb(201, 187, 183);
     font-size: 20px;
     text-decoration: none;
     position: relative;
     font-weight: 500;
+    opacity: 0.6;
+    transition: all 0.7s ease;
 }
+
+.nav-desktop .desktop-links a.ome{
+    opacity: 1;
+    color: #fff;
+}
+
 
 .desktop-links a:after{
     content: "";
@@ -140,8 +148,16 @@ body{
     transition: all 0.5s ease;
 }
 
+.desktop-links a:hover{
+    opacity: 1;
+}
+
 .desktop-links a:hover::after{
     /* scale: 1; */
+    transform: scaleX(0.8);
+}
+
+.nav-desktop .desktop-links a.ome::after{
     transform: scaleX(0.8);
 }
 
@@ -204,16 +220,12 @@ body{
 }
 
 .head .ii{
-    color: transparent;
+    color: tomato;
     margin-top: 40px;
     font-size: 150px;
     font-weight: bolder;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(rgb(255, 106, 0),rgb(246, 99, 51), tomato);
-
-    /* background-image: linear-gradient(red, tomato, red); */
-    /* -webkit-text-stroke: 3px #fff; */
 }
+
 
 .head .hidden{
     opacity: 0;
